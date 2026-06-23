@@ -1,0 +1,41 @@
+{
+  "name": "arbvision-ai",
+  "version": "1.0.0",
+  "description": "WEB3 AI DeFi Agent Flash Loan Arbitrage Trading Engine",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network hardhat",
+    "verify": "hardhat verify",
+    "test": "hardhat test",
+    "gas-report": "GAS_REPORT_ENABLED=true hardhat test",
+    "node": "hardhat node",
+    "fork": "FORKING=true hardhat node"
+  },
+  "keywords": [
+    "defi",
+    "arbitrage",
+    "flash-loan",
+    "aave",
+    "uniswap",
+    "ethereum"
+  ],
+  "author": "PAYEXTRA",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "hardhat": "^2.17.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.4",
+    "dotenv": "^16.3.1",
+    "chai": "^4.3.10",
+    "ethers": "^6.8.0"
+  },
+  "dependencies": {
+    "@aave/core-v3": "^1.18.0",
+    "openzeppelin-contracts": "^4.9.3"
+  }
+}
